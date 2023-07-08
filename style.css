@@ -1,0 +1,66 @@
+/* base css start */
+@import url("https://fonts.googleapis.com/css2?family=Electrolize&family=Open+Sans:ital,wght@0,300;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,300;1,400;1,500&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 9rem;
+  scroll-behavior: smooth;
+  background-color: var(--main-color);
+  font-family: "Electrolize", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+:root {
+  --main-color: #ff0808e1;
+  --black-color: #0e0e0e;
+  --border: 0.1rem solid rgba(255, 255, 255, 0.4);
+}
+/* base css end */
+
+/* header start */
+/* navbar start */
+.logo img {
+  width: 10rem;
+}
+header {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 7%;
+  margin: 2rem 7%;
+  border-radius: 4.5rem;
+  box-shadow: 0px 0px 17px -7px rgba(0, 0, 0, 0.4);
+  position: sticky;
+  top: 1rem;
+  z-index: 1;
+}
+header nav a {
+  margin: 0 1rem;
+  font-size: 1.6rem;
+  color: var(--black-color);
+  border-bottom: 0.2rem solid transparent;
+}
+header nav a:hover,
+header nav a.active {
+  border-color: var(--main-color);
+  padding-bottom: 0.5rem;
+}
+header .buttons button {
+  cursor: pointer;
+  font-size: 2.3rem;
+  margin-left: 2rem;
+  background-color: transparent;
+}
+/* navbar end */
+/* header end */
